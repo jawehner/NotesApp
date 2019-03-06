@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using NotesApp.Data;
 using NotesApp.WebMVC.Models;
 
 namespace NotesApp.WebMVC.Controllers

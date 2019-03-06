@@ -180,7 +180,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -257,6 +256,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NotesApp.Data\NotesApp.Data.csproj">
+      <Project>{017eb367-297a-43fa-8d4d-7383d536af0a}</Project>
+      <Name>NotesApp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NotesApp.Models\NotesApp.Models.csproj">
+      <Project>{e7af253b-e5b1-43fa-afa2-402eae635f12}</Project>
+      <Name>NotesApp.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NotesApp.Services\NotesApp.Services.csproj">
+      <Project>{2bdb9b8c-c45a-47b8-bc05-86dad6355f52}</Project>
+      <Name>NotesApp.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

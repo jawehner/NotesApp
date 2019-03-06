@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using NotesApp.WebMVC.Models;
+using NotesApp.Data;
 
 namespace NotesApp.WebMVC
 {
