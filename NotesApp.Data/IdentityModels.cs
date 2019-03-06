@@ -47,7 +47,6 @@ namespace NotesApp.Data
         }
     }
 
-
     public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
     {
         public IdentityUserLoginConfiguration()
@@ -58,6 +57,9 @@ namespace NotesApp.Data
 
     public class IdentityUserRoleConfiguration : EntityTypeConfiguration<IdentityUserRole>
     {
-
+        public IdentityUserRoleConfiguration()
+        {
+            HasKey(iur => iur.RoleId);
+        }
     }
 }
