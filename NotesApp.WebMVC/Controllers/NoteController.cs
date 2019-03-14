@@ -16,5 +16,11 @@ namespace NotesApp.WebMVC.Controllers
             var model = new NoteListItem[0];
             return View(model);
         }
+
+        // GET: Create View
+        public ActionResult Create()
+        {
+            return View();
+        }
     }
 }

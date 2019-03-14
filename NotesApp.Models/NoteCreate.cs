@@ -7,14 +7,11 @@ using System.Threading.Tasks;
 
 namespace NotesApp.Models
 {
-    public class NoteListItem
+    public class NoteCreate
     {
-        [Display(Name="Note ID")]
-        public int NoteId { get; set; }
+        [Required]
         public string Title { get; set; }
-
-        [Display(Name="Created")]
-        public DateTimeOffset DateCreatedUTC { get; set; }
+        public string Content { get; set; }
 
         public override string ToString() => Title;
     }
