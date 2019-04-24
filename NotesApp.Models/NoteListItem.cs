@@ -14,7 +14,7 @@ namespace NotesApp.Models
         public string Title { get; set; }
 
         [Display(Name="Created")]
-        public DateTimeOffset DateCreatedUTC { get; set; }
+        public DateTimeOffset DateCreatedUtc { get; set; }
 
         public override string ToString() => Title;
     }

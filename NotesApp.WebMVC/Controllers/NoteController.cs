@@ -23,6 +23,7 @@ namespace NotesApp.WebMVC.Controllers
             return View();
         }
 
+        //Add code here vvvv
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(NoteCreate model)
@@ -31,7 +32,6 @@ namespace NotesApp.WebMVC.Controllers
             {
 
             }
-
             return View(model);
         }
     }

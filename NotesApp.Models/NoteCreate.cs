@@ -17,9 +17,6 @@ namespace NotesApp.Models
         [MaxLength(8000)]
         public string Content { get; set; }
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
+        public override string ToString() => Title;
     }
 }
